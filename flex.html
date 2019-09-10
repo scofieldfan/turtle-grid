@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .container {
+                display: flex;
+                width: 600px;
+                height: 300px;
+                border: 1px solid #ccc;
+            }
+            .first-child {
+                width: 500px;
+                flex-shrink: 1;
+                height: 100px;
+                background-color: yellow;
+            }
+            .second-child {
+                width: 400px;
+                flex-shrink: 2;
+                height: 100px;
+                background-color: red;
+            }
+            #content {
+                display: flex;
+                width: 500px;
+            }
+
+            #content div {
+                width: 120px;
+                border: 3px solid rgba(0, 0, 0, 0.2);
+            }
+            .box {
+                flex-shrink: 1;
+            }
+
+            .box1 {
+                flex-shrink: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="first-child"></div>
+            <div class="second-child"></div>
+        </div>
+        <div id="content">
+            <div class="box" style="background-color:red;">A</div>
+            <div class="box" style="background-color:lightblue;">B</div>
+            <div class="box" style="background-color:yellow;">C</div>
+            <div class="box1" style="background-color:brown;">D</div>
+            <div class="box1" style="background-color:lightgreen;">E</div>
+        </div>
+    </body>
+</html>
